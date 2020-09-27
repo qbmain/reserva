@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="contenedor">
+        
+        <div id="formulario">
+            <!--
+            1 Contar con un formulario (<form></form>)
+            2 Los elementos a enviar deben estar dentro del formulario
+            3 Los elementos deben contar con el atributo name
+            4 Debemos contar con un submit dentro del formulario
+        -->
+            <!--ORDERNAR EN TABLAS-->
+            <form id="info" method="GET">
+                <h3>Registro</h3>
+                <!-- el atrivbuto action indica el destino de los datos
+                    y el atributo mathod indica el metodo de envío (GET o POST)-->
+                
+                <table>   
+                    <tr>
+                      <td><label for="nombre">Nombre:</label></td>
+                      <td><input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre" requiered></td>
+
+                    </tr>
+                    <tr>
+                      <td><label for="runJs">Rut:</label></td>
+                      <td><input type="text" id="runJs" name="runPhp" placeholder="ingrese rut" required></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><label for="correo">Correo:</label></td>
+                        <td><input type="email" id="correo" name="correo" placeholder="ingrese su correo" required></td>  
+                    
+                    </tr>
+                    <tr>
+                        <td><label class="titulo" for="clave">Contraseña:</label></td>
+                        <td><input type="password" id="clave" name="clave" required></td>  
+
+                    </tr>
+                    <tr>
+                        <td><label for="sexo">Sexo:</label></td>
+                        <td><select name="ciudad" id="ciudad">
+                            <option selected value="0">Seleccione su sexo</option>
+                            <option value="1">Femenino</option>
+                            <option value="2">Masculino</option>
+                            <option value="3">Otro</option>
+
+                        </select></td>
+                    </tr>
+                    
+                    <tr>
+                      <td><label for="celular">Celular:</label></td>
+                      <td><input type="number" name="celular" id="celular" maxlength="9" required></td>
+                      
+                    </tr>
+
+                    <tr>
+                        <td><label for="imgPerfil">Imagen de perfil:</label></td>
+                        <td><input type="file" id="imgPerfil"></td>
+                    </tr>
+                  </table>
+                <div id="btn_registro">
+                    <input class="boton" type="button" name="btn_registrar" id="btn_registrar" value="Registrar Cliente">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

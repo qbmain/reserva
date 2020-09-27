@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="mantenedorVisitantes.html">Principal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Secundario</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reserva</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tours.html">Tours</a>
+      </li>
+    </ul>
+
+    <div class="btn-group" role="group">
+
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-dark" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" href="#">Dropdown link</a>
+          <a class="dropdown-item" href="#">Dropdown link</a>
+        </div>
+      </div>
+    </div>
+
+
+  </nav>
+
+
+
+  <br>
+  <div class="row">
+    <div class="col-1"></div>
+    <div>
+      <Label>Buscar:</Label>
+      <input type="search" name="busqueda" id="busqueda">
+      <button type="button" class="btn btn-warning">Buscar</button>
+    </div>
+    <div>
+
+      <button type="button" class="btn btn-dark"><a href=".//mantenedorVisitantes.html">Crear nuevo participante</a> </button>
+      <button type="button" class="btn btn-dark">Modificar participante</button>
+      <button type="button" class="btn btn-danger">Bloquear</button>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <br>
+  <div class="container">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Rut</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Correo</th>
+          <th scope="col">Celular</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>18209790-k</td>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>email@mdo.com</td>
+          <td>8816207143</td>
+        </tr>
+        <tr>
+          <td>14401797-8</td>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>fakemail@fat.cl</td>
+          <td>8495013831</td>
+        </tr>
+        <tr>
+          <td>5362432-4</td>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>email1@twit.com</td>
+          <td>7186916139</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  </table>
+
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

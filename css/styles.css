@@ -1,0 +1,57 @@
+body{
+    font-family: sans-serif;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+nav{
+    background-color: #000000;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+li{
+    float: left;
+}
+td{
+    align-items: flex-end;
+}
+li a{
+    display: inline;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+
+li a :hover{
+    background-color: aqua;
+}
+
+#contenedor{
+    margin-top: 100px;
+    vertical-align: middle;
+    align-content: center;
+    text-align: inherit;
+    
+}
+#formulario{
+    margin: auto;
+    background-color:cornsilk;
+    border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+
+}  
+#info{
+    align-items: initial;
+    padding: 50px 50px;
+}
+#btn_registro{
+    align-items: center;
+}
