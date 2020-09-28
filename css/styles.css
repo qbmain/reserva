@@ -3,11 +3,38 @@ body{
     background-color: #ffffff;
     line-height: 1.5;
 }
-nav{
-    background-color: #000000;
-    margin-left: -4px;
-    margin-right: -4px;
+
+.active{
+    background-color: #28a745;
 }
+ul {
+    list-style-type: none;
+    margin-top:-8px ;
+    margin-left: -8px;
+    margin-right: -8px;;
+
+    padding: 7px;
+    overflow: hidden;
+    background-color: #343a40;
+    height: 53px;
+  }
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: #111;
+  }
+
+/*
 ul{
     list-style-type: none;
     margin: 0;
@@ -32,6 +59,7 @@ li a{
 li a :hover{
     background-color: aqua;
 }
+*/
 
 #contenedor{
     margin-top: 100px;

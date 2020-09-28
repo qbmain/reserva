@@ -12,16 +12,17 @@
 
     <nav>
         <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
+            <li><a href="tours.php">Tours</a></li>
+            <li><a href="mantenedorTour.html">Mantenedor tour</a></li>
+            <li><a class="active" href="mantenedorVisitantes.php">Mantenedor visita</a></li>
+            <li><a href="mantenedorGuia.php">Mantenedor guias</a></li>
+            <li><a href="mantenedor.php">Mantenedor master</a></li>
         </ul>
     </nav>
 
 
     <div id="contenedor">
-        
+
         <div id="formulario">
             <!--
             1 Contar con un formulario (<form></form>)
@@ -30,7 +31,7 @@
             4 Debemos contar con un submit dentro del formulario
         -->
             <!--ORDERNAR EN TABLAS-->
-            <form id="info" method="GET">
+            <form action="php/recibeVisitante.php" id="info" method="POST">
                 <h3>Registro</h3>
                 <!-- el atrivbuto action indica el destino de los datos
                     y el atributo mathod indica el metodo de envío (GET o POST)-->
@@ -42,8 +43,8 @@
 
                     </tr>
                     <tr>
-                      <td><label for="runJs">Rut:</label></td>
-                      <td><input type="text" id="runJs" name="runPhp" placeholder="ingrese rut" required></td>
+                      <td><label for="rut">Rut:</label></td>
+                      <td><input type="text" id="rut" name="rut" placeholder="ingrese rut" required></td>
                     
                     </tr>
                     <tr>
@@ -53,12 +54,12 @@
                     </tr>
                     <tr>
                         <td><label class="titulo" for="clave">Contraseña:</label></td>
-                        <td><input type="password" id="clave" name="clave" required></td>  
+                        <td><input type="password" maxlength="12" id="clave" name="clave" placeholder="********"required></td>  
 
                     </tr>
                     <tr>
                         <td><label for="sexo">Sexo:</label></td>
-                        <td><select name="ciudad" id="ciudad">
+                        <td><select name="sexo" id="sexo">
                             <option selected value="0">Seleccione su sexo</option>
                             <option value="1">Femenino</option>
                             <option value="2">Masculino</option>
@@ -69,19 +70,17 @@
                     
                     <tr>
                       <td><label for="celular">Celular:</label></td>
-                      <td><input type="number" name="celular" id="celular" maxlength="9" required></td>
+                      <td><input type="number" name="celular" id="celular" maxlength="9"" required></td>
                       
                     </tr>
 
                     <tr>
-                        <td><label for="imgPerfil">Imagen de perfil:</label></td>
-                        <td><input type="file" id="imgPerfil"></td>
+                        <td><label for="imagenPerfil">Imagen de perfil:</label></td>
+                        <td><input type="file" id="imagenPerfil" name="imagenPerfil"></td>
                     </tr>
                   </table>
-                <div id="btn_registro">
-                    <input class="boton" type="button" name="btn_registrar" id="btn_registrar" value="Registrar Cliente">
-                </div>
-
+                
+                <button type="submit">Registrar</button>
             </form>
         </div>
     </div>
